@@ -146,8 +146,32 @@ a {
 
 //-------- [ End Index ] --------
 
-// index page
+// Home Swiper 
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
 
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .swiper {
+    margin-left: auto;
+    margin-right: auto;
+  }
 
 
 
@@ -171,8 +195,8 @@ a {
 
 // Index Sections
 .categories {
-    padding: 75px 0 25px 0;
-    margin-top: 150px;
+    padding: 25px 0 25px 0;
+    margin-top: 50px;
     .row {
         padding: 0 1px;
     }
@@ -395,32 +419,10 @@ a {
             }
         }
     }
-    .header-overlay-text {
-        margin-top: 40px;
-        position: absolute;
-        top: -25px;
-        left: 50%;
-        transform: translate(-50%, 0);
-        width: 100%;
-        text-align: center;
-        h3 {
-            background-color: transparent;
-            -webkit-mask-image: linear-gradient(180deg, rgba(255, 255, 255, 0.4) -200%, rgba(255, 255, 255, 0) 100%);
-            font-size: 10rem;
-            font-weight: 700;
-            font-family: "num";
-            text-transform: uppercase;
-            text-align: center;
-            letter-spacing: 2px;
-            display: inline-block;
-            transform: scaleY(1.2);
-            transform-origin: 0 0;
-        }
-    }
 }
 
 .products-section-boxed {
-    padding: 25px 0 50px 0;
+    padding: 50px 0 50px 0;
     .row {
         padding: 1px 1px;
     }
