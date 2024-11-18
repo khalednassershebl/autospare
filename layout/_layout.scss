@@ -1449,8 +1449,15 @@ footer {
             .footer-brands {
                 margin: 0 25px;
                 .footer-brand-img {
+                    height: 20px;
+                    height: auto;
                     img {
                         max-width: 100%;
+                        text-align: center;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin: auto;
                     }
                 }
             }

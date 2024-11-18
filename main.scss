@@ -193,6 +193,28 @@ a {
     background: #181847; 
 }
 
+// Nice Select
+.nice-select {
+    float: right;
+    text-align: right !important;
+    :after {
+        left: 12px !important;
+        right: unset !important;
+    }
+}
+.nice-select:after {
+    left: 12px !important;
+    right: unset !important;
+}
+.nice-select .list {
+    left: unset !important;
+    right: 1px !important;
+}
+.nice-select .option {
+    padding-left: 29px !important;
+    padding-right: 18px !important;
+}
+
 // Index Sections
 .categories {
     padding: 25px 0 25px 0;
@@ -365,8 +387,14 @@ a {
 
 .brands {
     background-color: #f5f5f5;
-    padding: 75px 0;
+    padding: 50px 0;
     position: relative;
+    .row {
+        padding: 0 1px;
+    }
+    .col-lg-2,.col-md-4, .col-sm-6 {
+        padding: 0;
+    }
     .section-header-center {
         margin-bottom: 75px;
         .section-header-info {
@@ -387,10 +415,13 @@ a {
         }
     }
     .brands-container {
+        margin-top: 25px;
         .brand-card {
-            background-color: #000034;
+            background-color: #FFF;
             padding: 35px 30px;
             text-align: center;
+            border: 1px solid #e2e2e2;
+            margin-right: -1px;
             .img-container {
                 height: 54px;
             }
@@ -400,7 +431,7 @@ a {
                 height: 100%;
             }
             h3 {
-                color: #FFF;
+                color: $mainColor;
                 font-size: 1.3rem;
                 font-weight: 600;
                 margin-top: 35px;
