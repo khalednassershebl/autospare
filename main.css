@@ -1199,7 +1199,7 @@ p.text a {
   z-index: 15;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
   vertical-align: middle;
   height: 600px;
   text-align: center;
@@ -1531,7 +1531,6 @@ p.text a {
 }
 
 .index-page-layout {
-  background-image: url(assets/images/why.svg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1543,9 +1542,7 @@ p.text a {
   top: 0;
   content: "";
   width: 100%;
-  background: #0F0F0F;
-  opacity: 0.5;
-  background-image: url(assets/images/hero-overlay.webp);
+  background-color: rgba(0, 0, 52, 0.5607843137);
   transform: rotatex(180deg);
   z-index: 0;
   background-repeat: no-repeat;
@@ -1553,71 +1550,53 @@ p.text a {
   height: 60vh;
   z-index: 1;
 }
-.index-page-layout .header-text {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 30px 0 75px 0;
-}
-@media (max-width: 575.98px) {
-  .index-page-layout .header-text {
-    margin: 10px 0 75px 0;
-  }
-}
-.index-page-layout .header-text p {
-  width: 500px;
-  margin: 0 0 0 0;
-  color: #918D89;
-}
-.index-page-layout .header-text svg {
-  fill: #f74239;
-  height: 45px;
-  width: 45px;
-  border: 1px solid #d5d5d5;
-  border-radius: 50%;
-  padding: 7px;
-}
-@media (max-width: 575.98px) {
-  .index-page-layout .header-text svg {
-    display: none;
-  }
-}
-.index-page-layout figure {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  height: 750px;
-  width: 100%;
-}
-@media (max-width: 1199.98px) {
-  .index-page-layout figure {
-    height: 650px;
-  }
-}
-@media (max-width: 991.98px) {
-  .index-page-layout figure {
-    height: 550px;
-  }
-}
-@media (max-width: 767.98px) {
-  .index-page-layout figure {
-    height: 450px;
-  }
-}
-@media (max-width: 575.98px) {
-  .index-page-layout figure {
-    height: 350px;
-  }
-}
 .index-page-layout .index-header-content {
   position: relative;
   z-index: 15;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
   vertical-align: middle;
   height: calc(60vh - 100px);
-  text-align: center;
+  text-align: right;
+}
+.index-page-layout .index-header-content .index-header-content-details .pretitle {
+  color: rgba(255, 255, 255, 0.7803921569);
+  margin-bottom: 15px;
+  display: block;
+  font-size: 0.9rem;
+  word-spacing: 2px;
+  font-weight: 700;
+}
+@media (max-width: 991.98px) {
+  .index-page-layout .index-header-content .index-header-content-details .pretitle {
+    margin-bottom: 5px;
+  }
+}
+.index-page-layout .index-header-content .index-header-content-details h1 {
+  color: #FFF;
+  font-size: 4rem;
+  font-weight: 700;
+}
+@media (max-width: 1199.98px) {
+  .index-page-layout .index-header-content .index-header-content-details h1 {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 991.98px) {
+  .index-page-layout .index-header-content .index-header-content-details h1 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 767.98px) {
+  .index-page-layout .index-header-content .index-header-content-details h1 {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 575.98px) {
+  .index-page-layout .index-header-content .index-header-content-details h1 {
+    font-size: 1rem;
+  }
 }
 
 footer {
@@ -1782,6 +1761,140 @@ footer .copyrights .copyrights-container .terms-info span {
   margin: 0 10px;
 }
 
+.brand-list-page {
+  padding: 75px 0;
+}
+.brand-list-page .brands-container {
+  margin-top: 50px;
+}
+.brand-list-page .brands-container .row {
+  padding: 1px 1px;
+}
+.brand-list-page .brands-container .col-lg-2, .brand-list-page .brands-container .col-md-4, .brand-list-page .brands-container .col-sm-6 {
+  padding: 0;
+}
+.brand-list-page .brands-container .brand-card {
+  background-color: #FFF;
+  padding: 35px 30px;
+  text-align: center;
+  border: 1px solid #e2e2e2;
+  margin-right: -1px;
+  margin-top: -1px;
+  transition: all 0.2s ease-in-out;
+}
+.brand-list-page .brands-container .brand-card:hover {
+  background-color: #fafafa;
+}
+.brand-list-page .brands-container .brand-card .img-container {
+  height: 54px;
+}
+.brand-list-page .brands-container .brand-card img {
+  max-width: 100%;
+  margin-bottom: 25px;
+  height: 100%;
+}
+.brand-list-page .brands-container .brand-card h3 {
+  color: #000034;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-top: 35px;
+  margin-bottom: 0;
+  font-family: "Archivo", sans-serif;
+  transition: all 0.2s ease-in-out;
+}
+.brand-list-page .brands-container .brand-card p {
+  color: #f74239;
+  font-size: 0.9rem;
+  font-weight: 600;
+  font-family: "Archivo", sans-serif;
+  margin: 0;
+  transition: all 0.2s ease-in-out;
+}
+.brand-list-page .brands-container .brand-card p span {
+  font-family: "ar";
+}
+
+.terms-page {
+  padding: 75px 0;
+}
+.terms-page .terms-container {
+  margin-top: 50px;
+}
+.terms-page .terms-container .terms-line {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #e2e2e2;
+  padding: 50px 0;
+}
+.terms-page .terms-container .terms-line h3 {
+  width: 400px;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+.terms-page .terms-container .terms-line .terms-line-info {
+  flex: 1;
+  font-size: 0.9rem;
+}
+.terms-page .terms-container .terms-line .terms-line-info .terms-list-info {
+  margin-top: 25px;
+}
+.terms-page .terms-container .terms-line .terms-line-info .terms-list-info .terms-list-info-line {
+  display: flex;
+  margin: 5px 0;
+}
+.terms-page .terms-container .terms-line .terms-line-info .terms-list-info .terms-list-info-line img {
+  margin-left: 20px;
+  margin-top: 5px;
+  width: 20px;
+  height: 20px;
+}
+.terms-page .terms-container .terms-line .terms-line-info ul li {
+  margin: 20px 0;
+}
+.terms-page .contact-form {
+  padding: 75px 0 0 0;
+}
+.terms-page .contact-form .contact-form-container {
+  margin-top: 25px;
+}
+.terms-page .contact-form .contact-form-container .form-group {
+  margin-top: -1px;
+}
+.terms-page .contact-form .contact-form-container .form-group .form-control {
+  border-radius: 0;
+  border: 1px solid #e2e2e2;
+  padding: 30px 20px;
+  color: #000034;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+.terms-page .contact-form .contact-form-container .form-group .form-control::-moz-placeholder {
+  color: #737373;
+  font-weight: 600;
+  font-size: 0.75rem;
+}
+.terms-page .contact-form .contact-form-container .form-group .form-control::placeholder {
+  color: #737373;
+  font-weight: 600;
+  font-size: 0.75rem;
+}
+.terms-page .contact-form .contact-form-container .form-group textarea {
+  min-height: 200px;
+  padding: 15px 20px;
+}
+.terms-page .contact-form .contact-form-container button {
+  background: #f74239;
+  padding: 15px 30px;
+  border-radius: 0;
+  margin-right: 0;
+  outline: none;
+  border: unset;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #FFF;
+  margin-top: 25px;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -1870,6 +1983,27 @@ a:hover {
   fill: #000034;
   height: 22px;
   width: 22px;
+}
+
+.section-header-center .section-header-info {
+  text-align: center;
+}
+.section-header-center .section-header-info h3 {
+  font-size: 2.6rem;
+  font-weight: 600;
+  color: #000034;
+  margin-bottom: 5px;
+  text-align: center;
+}
+.section-header-center .section-header-info h3 span {
+  font-family: "Archivo";
+  text-transform: uppercase;
+}
+.section-header-center .section-header-info p {
+  color: #737373;
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-align: center;
 }
 
 .swiper {
@@ -2121,25 +2255,6 @@ a:hover {
 .brands .col-lg-2, .brands .col-md-4, .brands .col-sm-6 {
   padding: 0;
 }
-.brands .section-header-center {
-  margin-bottom: 75px;
-}
-.brands .section-header-center .section-header-info {
-  text-align: center;
-}
-.brands .section-header-center .section-header-info h3 {
-  font-size: 2.6rem;
-  font-weight: 600;
-  color: #000034;
-  margin-bottom: 5px;
-  text-align: center;
-}
-.brands .section-header-center .section-header-info p {
-  color: #737373;
-  font-size: 0.8rem;
-  font-weight: 500;
-  text-align: center;
-}
 .brands .brands-container {
   margin-top: 25px;
 }
@@ -2149,6 +2264,10 @@ a:hover {
   text-align: center;
   border: 1px solid #e2e2e2;
   margin-right: -1px;
+  transition: all 0.2s ease-in-out;
+}
+.brands .brands-container .brand-card:hover {
+  background-color: #fafafa;
 }
 .brands .brands-container .brand-card .img-container {
   height: 54px;
@@ -2165,6 +2284,7 @@ a:hover {
   margin-top: 35px;
   margin-bottom: 0;
   font-family: "Archivo", sans-serif;
+  transition: all 0.2s ease-in-out;
 }
 .brands .brands-container .brand-card p {
   color: #f74239;
@@ -2172,6 +2292,7 @@ a:hover {
   font-weight: 600;
   font-family: "Archivo", sans-serif;
   margin: 0;
+  transition: all 0.2s ease-in-out;
 }
 .brands .brands-container .brand-card p span {
   font-family: "ar";
