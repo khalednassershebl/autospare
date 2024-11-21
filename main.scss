@@ -41,6 +41,7 @@
 @import "brands/brands";
 @import "terms/terms";
 @import "products/products";
+@import "categories/category";
 
 //-------- [ End Pages ] --------
 
@@ -257,6 +258,11 @@ margin-right: auto;
             border: 1px solid #e2e2e2;
             height: 200px;
             margin-left: -1px;
+            transition: all 0.2s ease-in-out;
+            &:hover {
+                background-color: #fafafa;
+                border-bottom: 1px solid $secondColor;
+            }
             img {
                 position: absolute;
                 left: 23px;
@@ -291,7 +297,7 @@ margin-right: auto;
 .product-card {
     border: 1px solid #e2e2e2;
     margin-right: -1px;
-    height: 547px;
+    max-height: 547px;
     .product-actions-info {
         display: flex;
         align-items: center;
