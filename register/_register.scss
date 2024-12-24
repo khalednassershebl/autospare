@@ -1,0 +1,339 @@
+.register-page {
+    padding: 75px 0;
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    .row {
+        width: 100%;
+        margin: 0;
+        .col-md-12,
+        .col-md-6 {
+            padding: 0 8px;
+        }
+    }
+    .form-container {
+        height: 100%;
+        width: 100%;
+        .register-by {
+            margin: 0 8px;
+            span {
+                font-size: 0.75rem;
+                margin-bottom: 5px;
+                font-weight: 600;
+                display: block;
+                color: $secondColor;
+            }
+            .register-by-container {
+                border: 1px solid #e2e2e2;
+                padding: 7px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .register-type {
+                    text-align: center;
+                    width: 100%;
+                    padding: 10px 15px;
+                    font-size: 0.8rem;
+                    font-weight: 600;
+                    cursor: pointer;
+                }
+                .register-type.active {
+                    background-color: #f5f5f5;
+                    border: 1px solid #e2e2e2;
+                    text-align: center;
+                }
+            }
+        }
+        .form-card {
+            background: #FFF;
+            border: 1px solid #e2e2e2;
+            width: 475px;
+            padding: 35px 20px 30px 20px;
+            border-radius: 0;
+            margin: auto;
+            @media (max-width: $max-12) {
+                margin: 30px auto 50px auto;
+            }
+            @media (max-width: $max-5) {
+                width: 100%;
+                padding: 40px 15px;
+            }
+            .form-box-title {
+                font-size: 1.4rem;
+                margin-bottom: 35px;
+                text-align: center;
+                font-weight: 700;
+                color: $mainColor;
+            }
+            .form {
+                margin-top: 5px;
+                width: 100%;
+                position: relative;
+                .form-group {
+                    width: 100%;
+                    position: relative;
+                    margin: 7px 0;
+                    label {
+                        transition: all .3s ease-in-out;
+                        pointer-events: none;
+                        display: block;
+                        margin: 0;
+                        line-height: 1em;
+                    }
+                    .form-control {
+                        transition: border-color .2s ease-in-out;
+                        padding: 12px 18px 12px 18px;
+                        width: 100%;
+                        border-radius: 0;
+                        font-weight: 600;
+                        border: 1px solid #e2e2e2;
+                        color: $mainColor;
+                        &::placeholder {
+                            color: #737373;
+                            font-weight: 600;
+                        }
+                        &:focus {
+                            box-shadow: none;
+                            outline: none;
+                        }
+                    }
+                    select {
+                        cursor: pointer;
+                    }
+                }
+                .create-account-btn {
+                    text-decoration: none;
+                    width: 96%;
+                    display: flex;
+                    justify-content: center;
+                    margin: auto;
+                    color: #FFF;
+                    height: 48px;
+                    border-radius: 0;
+                    font-size: .875rem;
+                    font-weight: 700;
+                    text-align: center;
+                    line-height: 48px;
+                    cursor: pointer;
+                    margin-top: 15px;
+                    background: $mainColor;
+                    margin-top: 25px;
+                    border: 0;
+                    svg {
+                        height: 18px;
+                        margin-left: 4px;
+                        path {
+                            fill: #FFF;
+                        }
+                    }
+                    &:hover {
+                        background-color: $secondColor;
+                    }
+                }
+                p.text {
+                    margin-top: 30px;
+                    font-size: .6rem;
+                    line-height: 1.7142857143em;
+                    font-weight: 500;
+                    color: $secondColor;
+                    a {
+                        text-decoration: none;
+                        color: $secondColor;
+                        font-weight: 700;
+                    }
+                }
+                .active-input {
+                    label {
+                        padding: 0 6px;
+                        font-size: 0.7rem;
+                        top: 7px;
+                        right: 14px;
+                    }
+                }
+            }
+            .login-link {
+                a {
+                    color: $secondColor;
+                    font-weight: 700;
+                    display: flex;
+                    margin: auto;
+                    justify-content: center;
+                    margin-top: 20px;
+                    font-size: 0.8rem;
+                }
+            }
+        }
+        .register-social {
+            margin: 35px 30px 10px 30px;
+            .br {
+                background: #e2e2e2;
+                height: 1px;
+                position: relative;
+                span {
+                    font-size: 0.8rem;
+                    color: $secondColor;
+                    text-align: center;
+                    font-weight: 600;
+                    display: block;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    background: #FFF;
+                    padding: 5px 20px;
+                }
+            }
+            .register-social-icons {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 35px;
+                margin-bottom: 35px;
+                .icon {
+                    margin: 0 6px;
+                    font-size: 0.75rem;
+                    font-weight: 600;
+                    background: #f5f5f5;
+                    padding: 6px 9px;
+                    border: 1px solid #e2e2e2;
+                    width: 112px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    svg {
+                        height: 20px;
+                        width: 20px;
+                        fill: $mainColor;
+                        margin-left: 5px;
+                    }
+                }
+            }
+        }
+    }
+    .register-content {
+        width: 475px;
+        @media (max-width: $max-12) {
+            width: 100%;
+            padding-right: 20px;
+        }
+        @media (max-width: $max-9) {
+            text-align: center;
+            margin: 50px auto;
+            width: 90%;
+        }
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            display: block;
+            font-family: 'Kufam';
+            @media (max-width: $max-7) {
+                font-size: 1.8rem;
+            }
+            a {
+                text-decoration: none;
+                color: #FFF;
+            }
+        }
+        p {
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: #f6f8ffa6;
+            @media (max-width: $max-7) {
+                font-size: 1rem;
+            }
+        }
+        .register-links {
+            margin-top: 30px;
+            a {
+                text-decoration: none;
+                text-decoration: none;
+                background: #24c6dc;
+                color: #FFF;
+                padding: 6px 20px;
+                border-radius: 5px;
+                font-weight: 600;
+                font-size: 0.85rem;
+                margin-left: 8px;
+                border: 1px solid transparent;
+            }
+            .register-login {
+                border: 1px solid #FFF;
+                background: transparent;
+                color: #FFF;
+            }
+        }
+    }
+}
+
+// OTP PAGE
+ .form-box-text {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #737373;
+    text-align: center;
+    margin-top: -25px;
+    margin-bottom: 50px;
+ }
+  .otp-input-fields{
+    margin: auto;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    direction: ltr;
+    
+    input{
+      height: 40px;
+      width: 40px;
+      background-color: transparent;
+      border-radius: 0;
+      border: 1px solid #e2e2e2;
+      text-align: center;
+      outline: none;
+      font-size: 16px;
+      &::-webkit-outer-spin-button,
+      &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+  
+      /* Firefox */
+      &[type=number] {
+        -moz-appearance: textfield;
+      }
+      &:focus{
+            border-width: 2px;
+            border-color: darken($secondColor, 5%);
+            font-size: 20px;
+      }
+    }
+  }
+  
+  .result{
+    max-width: 400px;
+    margin: auto;
+    padding: 24px;
+    text-align: center;
+    p{
+      font-size: 24px;
+      font-family: 'Antonio', sans-serif;
+      opacity: 1;
+      transition: color 0.5s ease;
+      &._ok{
+        color: green;
+      }
+      &._notok{
+        color: red;
+        border-radius: 3px;
+      }
+    }
+  }
