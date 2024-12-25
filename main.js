@@ -40,3 +40,5 @@ $(".close-overlay").on("click", function () {
 $(".search-icon svg").on("click", function () {
   $(this).parent().toggleClass("show-search");
 });
+
+new WOW().init();
